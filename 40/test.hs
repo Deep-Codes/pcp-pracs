@@ -1,6 +1,6 @@
--- import Data.Char (toLower)
+import Data.Char (isLower)
 
--- toLowerString :: [Char] -> [Char]
--- toLowerString str = [toLower x | x <- str]
+toLowerString :: [Char] -> [Char]
+toLowerString str = [x | x <- str, isLower x]
 
--- *  NOt Correct Lol
+-- *  Correct AFFF
